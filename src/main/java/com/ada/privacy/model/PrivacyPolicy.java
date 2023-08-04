@@ -10,6 +10,7 @@ public class PrivacyPolicy {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String website;
     private String letterGrade;
     private String gradeSummary;
     private String aboutDataCollection;
@@ -21,7 +22,8 @@ public class PrivacyPolicy {
 
     }
 
-    public PrivacyPolicy(String letterGrade, String gradeSummary, String aboutDataCollection, String aboutDataStorage, String aboutUserRights, String aboutDataSecurity) {
+    public PrivacyPolicy(String website, String letterGrade, String gradeSummary, String aboutDataCollection, String aboutDataStorage, String aboutUserRights, String aboutDataSecurity) {
+        this.website = website;
         this.letterGrade = letterGrade;
         this.gradeSummary = gradeSummary;
         this.aboutDataCollection = aboutDataCollection;
@@ -30,8 +32,13 @@ public class PrivacyPolicy {
         this.aboutDataSecurity = aboutDataSecurity;
     }
 
+//    Getters
     public Long getId() {
         return id;
+    }
+
+    public String getWebsite() {
+        return website;
     }
 
     public String getLetterGrade() {
@@ -58,6 +65,15 @@ public class PrivacyPolicy {
         return aboutDataSecurity;
     }
 
+//    Setters
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
     public void setLetterGrade(String letterGrade) {
         this.letterGrade = letterGrade;
     }
@@ -80,5 +96,18 @@ public class PrivacyPolicy {
 
     public void setAboutDataSecurity(String aboutDataSecurity) {
         this.aboutDataSecurity = aboutDataSecurity;
+    }
+
+    @Override
+    public String toString() {
+        return "PrivacyPolicy{" +
+                "id=" + id +
+                ", letterGrade='" + letterGrade + '\'' +
+                ", gradeSummary='" + gradeSummary + '\'' +
+                ", aboutDataCollection='" + aboutDataCollection + '\'' +
+                ", aboutDataStorage='" + aboutDataStorage + '\'' +
+                ", aboutUserRights='" + aboutUserRights + '\'' +
+                ", aboutDataSecurity='" + aboutDataSecurity + '\'' +
+                '}';
     }
 }
