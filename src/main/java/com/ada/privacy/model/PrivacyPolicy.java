@@ -10,25 +10,35 @@ public class PrivacyPolicy {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(columnDefinition = "TEXT")
     private String website;
+    @Column(columnDefinition = "TEXT")
     private String letterGrade;
+    @Column(columnDefinition = "TEXT")
     private String gradeSummary;
+    @Column(columnDefinition = "TEXT")
     private String aboutDataCollection;
+    @Column(columnDefinition = "TEXT")
     private String aboutDataStorage;
+    @Column(columnDefinition = "TEXT")
     private String aboutUserRights;
+    @Column(columnDefinition = "TEXT")
+    private String aboutThirdPartySaleDisclosure;
+    @Column(columnDefinition = "TEXT")
     private String aboutDataSecurity;
 
     public PrivacyPolicy() {
 
     }
 
-    public PrivacyPolicy(String website, String letterGrade, String gradeSummary, String aboutDataCollection, String aboutDataStorage, String aboutUserRights, String aboutDataSecurity) {
+    public PrivacyPolicy(String website, String letterGrade, String gradeSummary, String aboutDataCollection, String aboutDataStorage, String aboutUserRights, String aboutThirdPartySaleDisclosure, String aboutDataSecurity) {
         this.website = website;
         this.letterGrade = letterGrade;
         this.gradeSummary = gradeSummary;
         this.aboutDataCollection = aboutDataCollection;
         this.aboutDataStorage = aboutDataStorage;
         this.aboutUserRights = aboutUserRights;
+        this.aboutThirdPartySaleDisclosure = aboutThirdPartySaleDisclosure;
         this.aboutDataSecurity = aboutDataSecurity;
     }
 
@@ -59,6 +69,10 @@ public class PrivacyPolicy {
 
     public String getAboutUserRights() {
         return aboutUserRights;
+    }
+
+    public String getAboutThirdPartySaleDisclosure() {
+        return aboutThirdPartySaleDisclosure;
     }
 
     public String getAboutDataSecurity() {
@@ -94,20 +108,13 @@ public class PrivacyPolicy {
         this.aboutUserRights = aboutUserRights;
     }
 
+    public void setAboutThirdPartySaleDisclosure(String aboutThirdPartySaleDisclosure) {
+        this.aboutThirdPartySaleDisclosure = aboutThirdPartySaleDisclosure;
+    }
+
     public void setAboutDataSecurity(String aboutDataSecurity) {
         this.aboutDataSecurity = aboutDataSecurity;
     }
 
-    @Override
-    public String toString() {
-        return "PrivacyPolicy{" +
-                "id=" + id +
-                ", letterGrade='" + letterGrade + '\'' +
-                ", gradeSummary='" + gradeSummary + '\'' +
-                ", aboutDataCollection='" + aboutDataCollection + '\'' +
-                ", aboutDataStorage='" + aboutDataStorage + '\'' +
-                ", aboutUserRights='" + aboutUserRights + '\'' +
-                ", aboutDataSecurity='" + aboutDataSecurity + '\'' +
-                '}';
-    }
+
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("api/summaries")
+@RequestMapping("/summaries")
 public class PrivacyPolicyController {
 
     @Autowired
@@ -20,4 +20,5 @@ public class PrivacyPolicyController {
     public PrivacyPolicy getPrivacyPolicy(@RequestBody IncomingText incomingText) {
         return this.privacyPolicyService.getSummary(incomingText);
     }
+    
 }
