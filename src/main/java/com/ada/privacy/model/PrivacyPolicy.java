@@ -10,9 +10,9 @@ public class PrivacyPolicy {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(columnDefinition = "TEXT")
+
     private String website;
-    @Column(columnDefinition = "TEXT")
+
     private String letterGrade;
     @Column(columnDefinition = "TEXT")
     private String gradeSummary;

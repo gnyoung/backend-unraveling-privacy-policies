@@ -20,5 +20,5 @@ public class PrivacyPolicyController {
     public PrivacyPolicy getPrivacyPolicy(@RequestBody IncomingText incomingText) {
         return this.privacyPolicyService.getSummary(incomingText);
     }
-    
+
 }
