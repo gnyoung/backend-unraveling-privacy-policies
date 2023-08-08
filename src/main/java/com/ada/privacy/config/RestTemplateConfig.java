@@ -22,6 +22,7 @@ public class RestTemplateConfig {
             request.getHeaders().setContentType(MediaType.APPLICATION_JSON);
             return execution.execute(request, body);
         });
+
         return restTemplate;
     }
 }

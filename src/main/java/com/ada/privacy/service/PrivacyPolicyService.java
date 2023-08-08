@@ -71,7 +71,6 @@ public class PrivacyPolicyService {
                 letterGrade, gradeSummary, dataCollectionAndUsage,
                 dataStorageAndRetention, userRightsAndControl, thirdPartySaleAndDisclosure, dataSecurity);
 
-//        save in database
         privacyPolicyRepository.save(summary);
 
         return summary;

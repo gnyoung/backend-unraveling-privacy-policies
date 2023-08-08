@@ -1,7 +1,6 @@
 package com.ada.privacy.chatgpt;
 
 public class Message {
-
     private String role;
     private String content;
 
