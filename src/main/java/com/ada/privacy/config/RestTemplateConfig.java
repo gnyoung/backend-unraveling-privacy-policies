@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
+//Adapted from: https://www.baeldung.com/spring-boot-chatgpt-api-openai
 @Configuration
 public class RestTemplateConfig {
 

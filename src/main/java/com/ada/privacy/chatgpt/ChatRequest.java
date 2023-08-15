@@ -3,6 +3,7 @@ package com.ada.privacy.chatgpt;
 import java.util.ArrayList;
 import java.util.List;
 
+//Adapted from: https://www.baeldung.com/spring-boot-chatgpt-api-openai
 public class ChatRequest {
 
     private String model;

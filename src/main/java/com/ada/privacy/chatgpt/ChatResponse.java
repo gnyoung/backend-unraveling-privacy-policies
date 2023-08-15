@@ -3,6 +3,7 @@ package com.ada.privacy.chatgpt;
 
 import java.util.List;
 
+//Source: https://www.baeldung.com/spring-boot-chatgpt-api-openai
 public class ChatResponse {
 
     private List<Choice> choices;

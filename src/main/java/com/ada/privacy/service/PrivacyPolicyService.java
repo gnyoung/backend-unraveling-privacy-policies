@@ -48,6 +48,7 @@ public class PrivacyPolicyService {
 
         String prompt = incomingText.getText();
 
+        //Adapted from: https://www.baeldung.com/spring-boot-chatgpt-api-openai
         ChatRequest request = new ChatRequest(model, prompt);
         ChatResponse response = restTemplate.postForObject(apiUrl, request, ChatResponse.class);
         if (response == null) {

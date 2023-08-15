@@ -1,5 +1,6 @@
 package com.ada.privacy.chatgpt;
 
+//Source: https://www.baeldung.com/spring-boot-chatgpt-api-openai
 public class Message {
     private String role;
     private String content;
