@@ -18,7 +18,7 @@ public class ChatRequest {
                 "Respond as if you are speaking directly to the user.";
         String userContent =
                 "I am going to send you the text of a privacy policy. " +
-                "First, read the entire privacy policy and give it a grade from A to F based on how well it implements good privacy practices in the areas of data collection and usage, data storage and retention, user rights and control, third party sale and disclosure, and data security. " +
+                "First, read the entire privacy policy and give it a grade from A to F based on how well it implements good privacy practices in the areas of data collection and usage, data storage and retention, user rights and control, third party sale and disclosure, and data security, with each area being given equal weight in scoring. " +
                 "Then, summarize the grade you gave the policy in no more than three sentences. " +
                 "Finally, provide a 2-3 sentence summary of any concerns or best practices in how privacy policy describes practices for data collection and usage, data storage and retention, user rights and control, third party sale and disclosure, and data security. " +
                 "Format your response in JSON. Only send back one JSON object with accurate information. Your response should look like: " +
